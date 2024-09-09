@@ -1,0 +1,357 @@
+#element{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#7cc0d8;
+}
+.logo-name{
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: -10px;
+    padding-bottom: -20px;
+    margin-top: -10px;
+}
+.item{
+    text-align: center;
+}
+.slogan{
+    font-size: 20px;
+    margin-top: -10px;
+    padding-top: -20px;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.search-input {
+    width: 300px;
+    flex-grow: 1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    color: #333;
+}
+
+.search-input::placeholder {
+    color: #87CEEB;
+}
+
+.search-button {
+    background: linear-gradient(45deg, #4FC3F7, #29B6F6, #03A9F4, #039BE5);
+    border: none;
+    border-radius: 0 20px 20px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.search-button:hover {
+    background: linear-gradient(45deg, #039BE5, #03A9F4, #29B6F6, #4FC3F7);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-color: #87CEEB;
+    font-family: "Roboto", sans-serif;;
+}
+/* ------------------------------------------------------------------------- */
+.form{
+    background-color: #87CEEB; /* Black with 60% opacity */
+    border-radius: 10px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    height: 1500px;
+    margin: 20px auto;
+}
+.current-location{
+    color: rgb(238, 230, 75);
+    font-size: 30px;
+    font-weight: bold;
+}
+.last-update{
+    margin-top: -15px;
+}
+.location{
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: rgb(238, 230, 75);
+    margin-top: -50px;
+    
+}
+/* ------------------------------------------------------------------ */
+.weather-widget {
+    background-color: #3478c5;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 190px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.now{
+    font-size: 24px;
+    margin-top: -120px;
+}
+/* .set{
+    margin-top: 20px;
+} */
+.weather-icon {
+    font-size: 40px;
+    margin-right: 20px;
+    margin-left: -50px;
+    margin-bottom: -10px;
+}
+.weather-info {
+    display: flex;
+    flex-direction: column;
+}
+.temperature {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.description {
+    font-size: 16px;
+    opacity: 0.8;
+}
+.feels-like {
+    font-size: 14px;
+    opacity: 0.7;
+}
+/* --------------------------------------------------------------------------------*/
+.forecast-container {
+    background-color: #3478c5;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    max-width: 650px;
+    margin-left: 450px;
+    margin-top: -240px;
+}
+.forecast-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.forecast-hours {
+    display: flex;
+    justify-content: space-between;
+}
+.forecast-hour {
+    text-align: center;
+    width: 20%;
+}
+.time {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.weather-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.temperature {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.feels-like {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+.humidity {
+    font-size: 18px;
+    opacity: 0.8;
+}
+.humidity-icon {
+    font-size: 18px;
+}
+/* ------------------------------------------------------- */
+.weather-panel {
+    display: flex;
+    background-color: #3478c5;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    max-width: 800px;
+    width: 100%;
+    margin-left: 200px;
+    margin-top: 70px;
+    
+}
+#sun-set{
+   margin-left: 900px;
+}
+.info-box {
+    flex: 1;
+    background-color: #4a90e2;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 5px;
+    text-align: center;
+    margin-top: 40px;
+}
+.date-box {
+    display: flex;
+    justify-content: space-between;
+}
+.sun-info {
+    text-align: center;
+}
+.icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.value {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.label {
+    font-size: 14px;
+    opacity: 0.8;
+}
+/* ----------------------------------------------------------------- */
+.forecast-container-week {
+            background-color:  #3478c5;
+            border-radius: 15px;
+            padding: 20px;
+            color: white;
+            width: 100%;
+            max-width: 800px;
+            margin-left: 200px;
+            margin-top: 60px;
+        }
+        .forecast-title-week {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .forecast-week {
+            display: flex;
+            justify-content: space-between;
+        }
+        .forecast-day {
+            text-align: center;
+            width: 14%;
+            padding: 10px 5px;
+            border-radius: 10px;
+        }
+        .day-name {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .weather-icon-week {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .temperature-week {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .feels-like-week{
+            font-size: 12px;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+        .humidity-week{
+            font-size: 17px;
+            opacity: 0.8;
+        }
+        .humidity-icon-week{
+            font-size: 14px;
+        }
+        /* --------------------------------------------------------------- */
+        .form-news{
+            background-color: #87CEEB; /* Black with 60% opacity */
+            border-radius: 10px;
+            padding: 20px;
+            color: rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            height: 400px;
+            margin: 20px auto;
+        }
+        .news-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .news {
+            color: #ffd700;
+            font-size: 40px;
+            font-weight: bold;
+            margin: 20px;
+            margin-left: 5px;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        .news-card {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 200px;
+        }
+        .news-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .news-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+        }
+        .news-text {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* --------------------------------------------------------------------- */
+        .form-video{
+            background-color: #87CEEB; /* Black with 60% opacity */
+            border-radius: 10px;
+            padding: 20px;
+            color: rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            height: 500px;
+            margin: 20px auto;
+        }
+        .line-1{
+            margin-left: 570px;
+            margin-top: -323px;
+        }

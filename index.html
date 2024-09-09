@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="element">
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img src="images/logo on background small.png" alt="logo" srcset="" height="42px" width="45px">
+                <span class="logo-name">WeatherWise<br>
+                    <div class="slogan">See the Weather Clearly, Act Wisely</div>
+                </span>
+                <span></span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Weather</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Maps</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Subcribe</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="search-container">
+        <input type="text" placeholder="Enter Location" class="search-input" id="location"><button class="search-button"
+            onclick="fetchWeatherDetails()">Search</button>
+
+    </div>
+
+    <div class="">
+        <form action="" class="form">
+            <h1 id="sun-set"></h1>
+            <div class="location" id="output">Panadura,Sri Lanka <img width="60" height="60"
+                    src="https://img.icons8.com/3d-fluency/94/marker.png" alt="marker" /></div>
+            <div class="last-update" id="lastUpdate">last update recently.</div>
+            <div class="weather-widget">
+                <div class="now">Now</div>
+                <div class="weather-icon"><img src="" alt="" id="now-weathericon" height="70" width="70"></div>
+                <div class="weather-info">
+                    <div class="temperature" id="Current-temp">29 °C</div>
+                    <div class="description" id="description"></div>
+                    <div class="feels-like" id="feels-like">Feels 30°</div>
+                </div>
+            </div>
+
+            <div class="forecast-container">
+                <div class="forecast-title">Hourly</div>
+                <div class="forecast-hours">
+                    <div class="forecast-hour">
+                        <div class="time">2 p.m</div>
+                        <div class="weather-icon">🌤️</div>
+                        <div class="temperature">29 °C</div>
+                        <div class="feels-like">Feels 31</div>
+                        <div class="humidity"><span class="humidity-icon"><span class="humidity-icon"><img width="40"
+                                        height="40" src="https://img.icons8.com/color/48/rain--v1.png"
+                                        alt="rain--v1" /></span> 45%</div>
+                    </div>
+                    <div class="forecast-hour">
+                        <div class="time">3 p.m</div>
+                        <div class="weather-icon">🌤️</div>
+                        <div class="temperature">29 °C</div>
+                        <div class="feels-like">Feels 31</div>
+                        <div class="humidity"><span class="humidity-icon"><span class="humidity-icon"><img width="40"
+                                        height="40" src="https://img.icons8.com/color/48/rain--v1.png"
+                                        alt="rain--v1" /></span> 45%</div>
+                    </div>
+                    <div class="forecast-hour">
+                        <div class="time">4 p.m</div>
+                        <div class="weather-icon">🌤️</div>
+                        <div class="temperature">28 °C</div>
+                        <div class="feels-like">Feels 31</div>
+                        <div class="humidity"><span class="humidity-icon"><span class="humidity-icon"><img width="40"
+                                        height="40" src="https://img.icons8.com/color/48/rain--v1.png"
+                                        alt="rain--v1" /></span> 45%</div>
+                    </div>
+                    <div class="forecast-hour">
+                        <div class="time">5 p.m</div>
+                        <div class="weather-icon">🌤️</div>
+                        <div class="temperature">29 °C</div>
+                        <div class="feels-like">Feels 31</div>
+                        <div class="humidity"><span class="humidity-icon"><span class="humidity-icon"><img width="40"
+                                        height="40" src="https://img.icons8.com/color/48/rain--v1.png"
+                                        alt="rain--v1" /></span> 45%</div>
+                    </div>
+                    <div class="forecast-hour">
+                        <div class="time">6 p.m</div>
+                        <div class="weather-icon">☁️</div>
+                        <div class="temperature">26 °C</div>
+                        <div class="feels-like">Feels 31</div>
+                        <div class="humidity"><span class="humidity-icon"><img width="40" height="40"
+                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
+                        </div>
+                    </div>
+                    <div class="forecast-hour">
+                        <div class="time">6 p.m</div>
+                        <div class="weather-icon">☁️</div>
+                        <div class="temperature">26 °C</div>
+                        <div class="feels-like">Feels 31</div>
+                        <div class="humidity"><span class="humidity-icon"><img width="40" height="40"
+                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weather-panel">
+
+                <div class="info-box date-box">
+                    <div class="sun-info">
+                        <div class="icon">🌅</div>
+                        <div class="label">sunrise</div>
+                        <div class="value" id="sunrise">6:17 A.M</div>
+                    </div>
+                    <div>
+                        <div class="value"></div>
+                    </div>
+                    <div class="sun-info">
+                        <div class="icon">🌇</div>
+                        <div class="label">sunset</div>
+                        <div class="value" id="sunset">7:28 P.M</div>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="icon">💨</div>
+                    <div class="label">Wind</div>
+                    <div class="value" id="wind">11 km/h </div>
+                </div>
+                <div class="info-box">
+                    <div class="icon">🌡️</div>
+                    <div class="label">Pressure</div>
+                    <div class="value" id="pressure">101.81kPa</div>
+                </div>
+                <div class="info-box">
+                    <div class="icon">💧</div>
+                    <div class="label">Humidity</div>
+                    <div class="value" id="humidity">55%</div>
+                </div>
+                <div class="info-box">
+                    <div class="icon">👁️</div>
+                    <div class="label">Visibility</div>
+                    <div class="value" id="visibility">13 KM</div>
+                </div>
+            </div>
+            <div class="forecast-container-week">
+                <div class="forecast-title-week">Week</div>
+                <div class="forecast-week">
+                    <div class="forecast-day">
+                        <div class="day-name">Monday</div>
+                        <div class="weather-icon-week">🌤️</div>
+                        <div class="temperature-week">29 °C</div>
+                        <div class="feels-like-week">Feels 31</div>
+                        <div class="humidity-week"><span class="humidity-icon-week"><img width="30" height="30"
+                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
+                        </div>
+                    </div>
+                    <div class="forecast-day">
+                        <div class="day-name">Thursday</div>
+                        <div class="weather-icon-week">🌤️</div>
+                        <div class="temperature-week">29 °C</div>
+                        <div class="feels-like-week">Feels 31</div>
+                        <div class="humidity-week"><span class="humidity-icon-week"><img width="30" height="30"
+                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
+                        </div>
+                    </div>
+                    <div class="forecast-day">
+                        <div class="day-name">Wednesday</div>
+                        <div class="weather-icon-week">🌤️</div>
+                        <div class="temperature-week">28 °C</div>
+                        <div class="feels-like-week">Feels 31</div>
+                        <div class="humidity-week"><span class="humidity-icon-week"><img width="30" height="30"
+                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
+                        </div>
+                    </div>
+                    <div class="forecast-day">
+                        <div class="day-name">Tuesday</div>
+                        <div class="weather-icon-week">🌤️</div>
+                        <div class="temperature-week">29 °C</div>
+                        <div class="feels-like-week">Feels 31</div>
+                        <div class="humidity-week"><span class="humidity-icon-week"><img width="30" height="30"
+                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
+                        </div>
+                    </div>
+                    <div class="forecast-day">
+                        <div class="day-name">Firday</div>
+                        <div class="weather-icon-week">☀️</div>
+                        <div class="temperature-week">31 °C</div>
+                        <div class="feels-like-week">Feels 31</div>
+                        <div class="humidity-week"><span class="humidity-icon-week"><img width="30" height="30"
+                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
+                        </div>
+                    </div>
+                    <div class="forecast-day">
+                        <div class="day-name">Saturday</div>
+                        <div class="weather-icon-week">☀️</div>
+                        <div class="temperature-week">31 °C</div>
+                        <div class="feels-like-week">Feels 31</div>
+                        <div class="humidity-week"><span class="humidity-icon-week"><img width="30" height="30"
+                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
+                        </div>
+                    </div>
+                    <div class="forecast-day">
+                        <div class="day-name">Sunday</div>
+                        <div class="weather-icon-week">☀️</div>
+                        <div class="temperature-week">31 °C</div>
+                        <div class="feels-like-week">Feels 31</div>
+                        <div class="humidity-week"><span class="humidity-icon-week"><img width="30" height="30"
+                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97772.22049728228!2d79.8658290628741!3d6.728284827383767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24616c169e7c3%3A0xd21e80c970651d56!2sPanadura!5e0!3m2!1sen!2slk!4v1725783599004!5m2!1sen!2slk"
+                width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </form>
+        <div class="form-news">
+            <div class="news-container">
+                <h1 class="news">News <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/news.png"
+                        alt="news" /></h1>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <img src="images/news.jpg" alt="Flood news">
+                        <div class="news-overlay">
+                            <p class="news-text">Typhoon Yagi forces school and work suspensions in southern China,
+                                highest storm in decade.</p>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img src="images/news2.jpg" alt="Weather map">
+                        <div class="news-overlay">
+                            <p class="news-text">Storm in northern Philippines kills 14, causing landslides, floods, and
+                                swollen rivers.</p>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img src="images/news3.jpg" alt="Climate change">
+                        <div class="news-overlay">
+                            <p class="news-text">Thunderstorms often bring rain but can also cause wildfires and dry
+                                weather.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-video">
+            <h1 class="news">Featured Videos <img width="80" height="80"
+                    src="https://img.icons8.com/3d-fluency/94/circled-play.png" alt="circled-play" /></h1>
+            <iframe width="560" height="316" src="https://www.youtube.com/embed/Owdzka9tFF0?si=cZvLPUdcFxIK3h00"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="line-1">
+                <iframe width="280" height="158" src="https://www.youtube.com/embed/Y1TtcBi2h6Y?si=-7Hm_CiDi6MVZwa8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="280" height="158" src="https://www.youtube.com/embed/PHJYpDA7Upo?si=94TnpBV3qoIKHcOj"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+                <iframe width="280" height="158" src="https://www.youtube.com/embed/qBoxq4SvVWg?si=xgR7KMrKlEyJ70Yv"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="280" height="158" src="https://www.youtube.com/embed/gXaImjh7FFA?si=uElEh96CpiGyOAwx"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/home.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

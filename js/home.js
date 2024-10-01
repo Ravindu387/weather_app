@@ -156,6 +156,106 @@ function fetchCurrentWeather(data){
     document.getElementById(`hour4-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[4].feelslike_c)+`°C`;
     document.getElementById(`hour4-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[4].chance_of_rain)+`%`;
 
+    document.getElementById(`hour5-img`).src=forecast.forecastday[0].hour[5].condition.icon;
+    document.getElementById(`hour5-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[5].temp_c)+`°C`;
+    document.getElementById(`hour5-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[5].feelslike_c)+`°C`;
+    document.getElementById(`hour5-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[5].chance_of_rain)+`%`;
+
+    document.getElementById(`hour6-img`).src=forecast.forecastday[0].hour[6].condition.icon;
+    document.getElementById(`hour6-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[6].temp_c)+`°C`;
+    document.getElementById(`hour6-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[6].feelslike_c)+`°C`;
+    document.getElementById(`hour6-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[6].chance_of_rain)+`%`;
+
+    document.getElementById(`hour7-img`).src=forecast.forecastday[0].hour[7].condition.icon;
+    document.getElementById(`hour7-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[7].temp_c)+`°C`;
+    document.getElementById(`hour7-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[7].feelslike_c)+`°C`;
+    document.getElementById(`hour7-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[7].chance_of_rain)+`%`;
+
+    document.getElementById(`hour8-img`).src=forecast.forecastday[0].hour[8].condition.icon;
+    document.getElementById(`hour8-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[8].temp_c)+`°C`;
+    document.getElementById(`hour8-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[8].feelslike_c)+`°C`;
+    document.getElementById(`hour8-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[8].chance_of_rain)+`%`;
+
+    document.getElementById(`hour9-img`).src=forecast.forecastday[0].hour[9].condition.icon;
+    document.getElementById(`hour9-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[9].temp_c)+`°C`;
+    document.getElementById(`hour9-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[9].feelslike_c)+`°C`;
+    document.getElementById(`hour9-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[9].chance_of_rain)+`%`;
+
+    document.getElementById(`hour10-img`).src=forecast.forecastday[0].hour[10].condition.icon;
+    document.getElementById(`hour10-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[10].temp_c)+`°C`;
+    document.getElementById(`hour10-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[10].feelslike_c)+`°C`;
+    document.getElementById(`hour10-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[10].chance_of_rain)+`%`;
+
+    document.getElementById(`hour11-img`).src=forecast.forecastday[0].hour[11].condition.icon;
+    document.getElementById(`hour11-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[11].temp_c)+`°C`;
+    document.getElementById(`hour11-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[11].feelslike_c)+`°C`;
+    document.getElementById(`hour11-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[11].chance_of_rain)+`%`;
+
+    document.getElementById(`hour12-img`).src=forecast.forecastday[0].hour[12].condition.icon;
+    document.getElementById(`hour12-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[12].temp_c)+`°C`;
+    document.getElementById(`hour12-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[12].feelslike_c)+`°C`;
+    document.getElementById(`hour12-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[12].chance_of_rain)+`%`;
+
+    document.getElementById(`hour13-img`).src=forecast.forecastday[0].hour[13].condition.icon;
+    document.getElementById(`hour13-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[13].temp_c)+`°C`;
+    document.getElementById(`hour13-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[13].feelslike_c)+`°C`;
+    document.getElementById(`hour13-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[13].chance_of_rain)+`%`;
+
+    document.getElementById(`hour14-img`).src=forecast.forecastday[0].hour[14].condition.icon;
+    document.getElementById(`hour14-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[14].temp_c)+`°C`;
+    document.getElementById(`hour14-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[14].feelslike_c)+`°C`;
+    document.getElementById(`hour14-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[14].chance_of_rain)+`%`;
+
+    document.getElementById(`hour15-img`).src=forecast.forecastday[0].hour[15].condition.icon;
+    document.getElementById(`hour15-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[15].temp_c)+`°C`;
+    document.getElementById(`hour15-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[15].feelslike_c)+`°C`;
+    document.getElementById(`hour15-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[15].chance_of_rain)+`%`;
+
+    document.getElementById(`hour16-img`).src=forecast.forecastday[0].hour[16].condition.icon;
+    document.getElementById(`hour16-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[16].temp_c)+`°C`;
+    document.getElementById(`hour16-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[16].feelslike_c)+`°C`;
+    document.getElementById(`hour16-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[16].chance_of_rain)+`%`;
+
+    document.getElementById(`hour17-img`).src=forecast.forecastday[0].hour[17].condition.icon;
+    document.getElementById(`hour17-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[17].temp_c)+`°C`;
+    document.getElementById(`hour17-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[17].feelslike_c)+`°C`;
+    document.getElementById(`hour17-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[16].chance_of_rain)+`%`;
+    
+    document.getElementById(`hour18-img`).src=forecast.forecastday[0].hour[18].condition.icon;
+    document.getElementById(`hour18-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[18].temp_c)+`°C`;
+    document.getElementById(`hour18-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[18].feelslike_c)+`°C`;
+    document.getElementById(`hour18-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[18].chance_of_rain)+`%`;
+
+    document.getElementById(`hour19-img`).src=forecast.forecastday[0].hour[19].condition.icon;
+    document.getElementById(`hour19-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[19].temp_c)+`°C`;
+    document.getElementById(`hour19-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[19].feelslike_c)+`°C`;
+    document.getElementById(`hour19-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[19].chance_of_rain)+`%`;
+
+    document.getElementById(`hour20-img`).src=forecast.forecastday[0].hour[20].condition.icon;
+    document.getElementById(`hour20-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[20].temp_c)+`°C`;
+    document.getElementById(`hour20-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[20].feelslike_c)+`°C`;
+    document.getElementById(`hour20-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[20].chance_of_rain)+`%`;
+
+    document.getElementById(`hour21-img`).src=forecast.forecastday[0].hour[21].condition.icon;
+    document.getElementById(`hour21-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[21].temp_c)+`°C`;
+    document.getElementById(`hour21-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[21].feelslike_c)+`°C`;
+    document.getElementById(`hour21-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[21].chance_of_rain)+`%`;
+
+    document.getElementById(`hour22-img`).src=forecast.forecastday[0].hour[22].condition.icon;
+    document.getElementById(`hour22-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[22].temp_c)+`°C`;
+    document.getElementById(`hour22-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[22].feelslike_c)+`°C`;
+    document.getElementById(`hour22-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[22].chance_of_rain)+`%`;
+
+    document.getElementById(`hour23-img`).src=forecast.forecastday[0].hour[23].condition.icon;
+    document.getElementById(`hour23-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[23].temp_c)+`°C`;
+    document.getElementById(`hour23-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[23].feelslike_c)+`°C`;
+    document.getElementById(`hour23-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[23].chance_of_rain)+`%`;
+
+
+
+
+
+
     
 }
 
@@ -286,6 +386,103 @@ function currentLocation(data){
     document.getElementById(`hour4-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[4].temp_c)+`°C`;
     document.getElementById(`hour4-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[4].feelslike_c)+`°C`;
     document.getElementById(`hour4-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[4].chance_of_rain)+`%`;
+
+    document.getElementById(`hour5-img`).src=forecast.forecastday[0].hour[5].condition.icon;
+    document.getElementById(`hour5-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[5].temp_c)+`°C`;
+    document.getElementById(`hour5-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[5].feelslike_c)+`°C`;
+    document.getElementById(`hour5-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[5].chance_of_rain)+`%`;
+
+    document.getElementById(`hour6-img`).src=forecast.forecastday[0].hour[6].condition.icon;
+    document.getElementById(`hour6-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[6].temp_c)+`°C`;
+    document.getElementById(`hour6-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[6].feelslike_c)+`°C`;
+    document.getElementById(`hour6-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[6].chance_of_rain)+`%`;
+
+    document.getElementById(`hour7-img`).src=forecast.forecastday[0].hour[7].condition.icon;
+    document.getElementById(`hour7-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[7].temp_c)+`°C`;
+    document.getElementById(`hour7-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[7].feelslike_c)+`°C`;
+    document.getElementById(`hour7-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[7].chance_of_rain)+`%`;
+
+    document.getElementById(`hour8-img`).src=forecast.forecastday[0].hour[8].condition.icon;
+    document.getElementById(`hour8-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[8].temp_c)+`°C`;
+    document.getElementById(`hour8-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[8].feelslike_c)+`°C`;
+    document.getElementById(`hour8-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[8].chance_of_rain)+`%`;
+
+    document.getElementById(`hour9-img`).src=forecast.forecastday[0].hour[9].condition.icon;
+    document.getElementById(`hour9-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[9].temp_c)+`°C`;
+    document.getElementById(`hour9-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[9].feelslike_c)+`°C`;
+    document.getElementById(`hour9-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[9].chance_of_rain)+`%`;
+
+    document.getElementById(`hour10-img`).src=forecast.forecastday[0].hour[10].condition.icon;
+    document.getElementById(`hour10-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[10].temp_c)+`°C`;
+    document.getElementById(`hour10-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[10].feelslike_c)+`°C`;
+    document.getElementById(`hour10-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[10].chance_of_rain)+`%`;
+
+    document.getElementById(`hour11-img`).src=forecast.forecastday[0].hour[11].condition.icon;
+    document.getElementById(`hour11-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[11].temp_c)+`°C`;
+    document.getElementById(`hour11-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[11].feelslike_c)+`°C`;
+    document.getElementById(`hour11-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[11].chance_of_rain)+`%`;
+
+    document.getElementById(`hour12-img`).src=forecast.forecastday[0].hour[12].condition.icon;
+    document.getElementById(`hour12-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[12].temp_c)+`°C`;
+    document.getElementById(`hour12-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[12].feelslike_c)+`°C`;
+    document.getElementById(`hour12-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[12].chance_of_rain)+`%`;
+
+    document.getElementById(`hour13-img`).src=forecast.forecastday[0].hour[13].condition.icon;
+    document.getElementById(`hour13-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[13].temp_c)+`°C`;
+    document.getElementById(`hour13-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[13].feelslike_c)+`°C`;
+    document.getElementById(`hour13-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[13].chance_of_rain)+`%`;
+
+    document.getElementById(`hour14-img`).src=forecast.forecastday[0].hour[14].condition.icon;
+    document.getElementById(`hour14-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[14].temp_c)+`°C`;
+    document.getElementById(`hour14-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[14].feelslike_c)+`°C`;
+    document.getElementById(`hour14-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[14].chance_of_rain)+`%`;
+
+    document.getElementById(`hour15-img`).src=forecast.forecastday[0].hour[15].condition.icon;
+    document.getElementById(`hour15-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[15].temp_c)+`°C`;
+    document.getElementById(`hour15-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[15].feelslike_c)+`°C`;
+    document.getElementById(`hour15-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[15].chance_of_rain)+`%`;
+
+    document.getElementById(`hour16-img`).src=forecast.forecastday[0].hour[16].condition.icon;
+    document.getElementById(`hour16-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[16].temp_c)+`°C`;
+    document.getElementById(`hour16-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[16].feelslike_c)+`°C`;
+    document.getElementById(`hour16-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[16].chance_of_rain)+`%`;
+
+    document.getElementById(`hour17-img`).src=forecast.forecastday[0].hour[17].condition.icon;
+    document.getElementById(`hour17-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[17].temp_c)+`°C`;
+    document.getElementById(`hour17-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[17].feelslike_c)+`°C`;
+    document.getElementById(`hour17-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[16].chance_of_rain)+`%`;
+
+    document.getElementById(`hour18-img`).src=forecast.forecastday[0].hour[18].condition.icon;
+    document.getElementById(`hour18-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[18].temp_c)+`°C`;
+    document.getElementById(`hour18-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[18].feelslike_c)+`°C`;
+    document.getElementById(`hour18-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[18].chance_of_rain)+`%`;
+
+    document.getElementById(`hour19-img`).src=forecast.forecastday[0].hour[19].condition.icon;
+    document.getElementById(`hour19-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[19].temp_c)+`°C`;
+    document.getElementById(`hour19-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[19].feelslike_c)+`°C`;
+    document.getElementById(`hour19-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[19].chance_of_rain)+`%`;
+
+    document.getElementById(`hour20-img`).src=forecast.forecastday[0].hour[20].condition.icon;
+    document.getElementById(`hour20-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[20].temp_c)+`°C`;
+    document.getElementById(`hour20-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[20].feelslike_c)+`°C`;
+    document.getElementById(`hour20-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[20].chance_of_rain)+`%`;
+
+    document.getElementById(`hour21-img`).src=forecast.forecastday[0].hour[21].condition.icon;
+    document.getElementById(`hour21-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[21].temp_c)+`°C`;
+    document.getElementById(`hour21-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[21].feelslike_c)+`°C`;
+    document.getElementById(`hour21-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[21].chance_of_rain)+`%`;
+
+    document.getElementById(`hour22-img`).src=forecast.forecastday[0].hour[22].condition.icon;
+    document.getElementById(`hour22-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[22].temp_c)+`°C`;
+    document.getElementById(`hour22-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[22].feelslike_c)+`°C`;
+    document.getElementById(`hour22-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[22].chance_of_rain)+`%`;
+
+    document.getElementById(`hour23-img`).src=forecast.forecastday[0].hour[23].condition.icon;
+    document.getElementById(`hour23-temp`).innerHTML=Math.round(forecast.forecastday[0].hour[23].temp_c)+`°C`;
+    document.getElementById(`hour23-feels`).innerHTML=`Feels `+Math.round(forecast.forecastday[0].hour[23].feelslike_c)+`°C`;
+    document.getElementById(`hour23-rain`).innerHTML=Math.round(forecast.forecastday[0].hour[23].chance_of_rain)+`%`;
+
+
 
 
 

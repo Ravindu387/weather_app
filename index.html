@@ -47,9 +47,10 @@
             <div class="location" id="output">Panadura,Sri Lanka <img width="60" height="60"
                     src="https://img.icons8.com/3d-fluency/94/marker.png" alt="marker" /></div>
             <div class="last-update" id="lastUpdate">last update recently.</div>
+
             <div class="weather-widget">
                 <div class="now">Now</div>
-                <div class="weather-icon"><img src="" alt="" id="now-weathericon" height="70" width="70"></div>
+                <div class="weather-icon"><img src="" alt="" id="now-weathericon" height="80" width="80"></div>
                 <div class="weather-info">
                     <div class="temperature" id="Current-temp">29 °C</div>
                     <div class="description" id="description"></div>
@@ -57,7 +58,7 @@
                 </div>
             </div>
 
-            <div class="forecast-container">
+            <!-- <div class="forecast-container">
                 <div class="forecast-title">Hourly</div>
                 <div class="forecast-hours">
                     <div class="forecast-hour">
@@ -114,16 +115,137 @@
                                     src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
                         </div>
                     </div>
+                    <div class="forecast-hour">
+                        <div class="time">2 p.m</div>
+                        <div class="weather-icon">🌤️</div>
+                        <div class="temperature">29 °C</div>
+                        <div class="feels-like">Feels 31</div>
+                        <div class="humidity"><span class="humidity-icon"><span class="humidity-icon"><img width="40"
+                                        height="40" src="https://img.icons8.com/color/48/rain--v1.png"
+                                        alt="rain--v1" /></span> 45%</div>
+                    </div>
                 </div>
-            </div>
+            </div> -->
+            <div class="weather-container">
+                <h2>Hourly</h2>
+                <div class="scroll-container">
+                  <div class="weather-items">
+                    <div class="weather-item">
+                      <div class="time" id="hour0-time">00.00 a.m</div>
+                      <img src="/api/placeholder/32/32" alt="" class="weather-icon" id="hour0-img">
+                      <div class="temperature" id="hour0-temp">29°C</div>
+                      <div class="feels-like" id="hour0-feels">Feels 31</div>
+                      <div class="humidity">
+                        <span class="humidity-icon-week" ><img width="30" height="30"
+                            src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 
+                            <span id="hour0-rain"> 45%</span>
+                      </div>
+                    </div>
+                    <div class="weather-item">
+                      <div class="time">1.00 a.m</div>
+                      <img src="/api/placeholder/32/32" alt="" class="weather-icon" id="hour1-img">
+                      <div class="temperature" id="hour1-temp">29°C</div>
+                      <div class="feels-like" id="hour1-feels">Feels 31</div>
+                      <div class="humidity">
+                        <span class="humidity-icon-week" ><img width="30" height="30"
+                            src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 
+                            <span id="hour1-rain"> 45%</span>
+                      </div>
+                    </div>
+                    <div class="weather-item">
+                      <div class="time">2.00 a.m</div>
+                      <img src="/api/placeholder/32/32" alt="" class="weather-icon" id="hour2-img">
+                      <div class="temperature" id="hour2-temp">28°C</div>
+                      <div class="feels-like" id="hour2-feels">Feels 31</div>
+                      <div class="humidity">
+                        <span class="humidity-icon-week" ><img width="30" height="30"
+                            src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 
+                            <span id="hour2-rain"> 45%</span>
+                      </div>
+                    </div>
+                    <div class="weather-item">
+                      <div class="time">3.00 a.m</div>
+                      <img src="/api/placeholder/32/32" alt="" class="weather-icon" id="hour3-img">
+                      <div class="temperature" id="hour3-temp">29°C</div>
+                      <div class="feels-like" id="hour3-feels">Feels 31</div>
+                      <div class="humidity">
+                        <span class="humidity-icon-week" ><img width="30" height="30"
+                            src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 
+                            <span id="hour3-rain"> 45%</span>
+                      </div>
+                    </div>
+                    <div class="weather-item">
+                      <div class="time">4.00 a.m</div>
+                      <img src="/api/placeholder/32/32" alt="" class="weather-icon" id="hour4-img">
+                      <div class="temperature" id="hour4-temp">26°C</div>
+                      <div class="feels-like" id="hour4-feels">Feels 31</div>
+                      <div class="humidity">
+                        <span class="humidity-icon-week" ><img width="30" height="30"
+                            src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 
+                            <span id="hour4-rain"> 45%</span>
+                      </div>
+                    </div>
+                    <div class="weather-item">
+                      <div class="time">7 p.m</div>
+                      <img src="/api/placeholder/32/32" alt="" class="weather-icon">
+                      <div class="temperature">26°C</div>
+                      <div class="feels-like">Feels 31</div>
+                      <div class="humidity">
+                        <img src="/api/placeholder/16/16" alt="" style="margin-right: 4px">
+                        45%
+                      </div>
+                    </div>
+                    <div class="weather-item">
+                      <div class="time">8 p.m</div>
+                      <img src="/api/placeholder/32/32" alt="" class="weather-icon">
+                      <div class="temperature">25°C</div>
+                      <div class="feels-like">Feels 30</div>
+                      <div class="humidity">
+                        <img src="/api/placeholder/16/16" alt="" style="margin-right: 4px">
+                        50%
+                      </div>
+                    </div>
+                    <div class="weather-item">
+                      <div class="time">9 p.m</div>
+                      <img src="/api/placeholder/32/32" alt="" class="weather-icon">
+                      <div class="temperature">24°C</div>
+                      <div class="feels-like">Feels 29</div>
+                      <div class="humidity">
+                        <img src="/api/placeholder/16/16" alt="" style="margin-right: 4px">
+                        55%
+                      </div>
+                    </div>
+                    <div class="weather-item">
+                        <div class="time">9 p.m</div>
+                        <img src="/api/placeholder/32/32" alt="" class="weather-icon">
+                        <div class="temperature">24°C</div>
+                        <div class="feels-like">Feels 29</div>
+                        <div class="humidity">
+                          <img src="/api/placeholder/16/16" alt="" style="margin-right: 4px">
+                          55%
+                        </div>
+                      </div>
+                      <div class="weather-item">
+                        <div class="time">9 p.m</div>
+                        <img src="/api/placeholder/32/32" alt="" class="weather-icon">
+                        <div class="temperature">24°C</div>
+                        <div class="feels-like">Feels 29</div>
+                        <div class="humidity">
+                          <img src="/api/placeholder/16/16" alt="" style="margin-right: 4px">
+                          55%
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
 
             <div class="weather-panel">
-
+                <div class="forecast-title-week">Detailed Observations</div>
                 <div class="info-box date-box">
                     <div class="sun-info">
                         <div class="icon">🌅</div>
                         <div class="label">sunrise</div>
-                        <div class="value" id="sunrise">6:17 A.M</div>
+                        <div class="value" id="sunrise">6:17 A.M  </div>
                     </div>
                     <div>
                         <div class="value"></div>
@@ -159,75 +281,71 @@
                 <div class="forecast-title-week">Week</div>
                 <div class="forecast-week">
                     <div class="forecast-day">
-                        <div class="day-name">Monday</div>
-                        <div class="weather-icon-week">🌤️</div>
-                        <div class="temperature-week">29 °C</div>
-                        <div class="feels-like-week">Feels 31</div>
-                        <div class="humidity-week"><span class="humidity-icon-week"><img width="30" height="30"
-                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
+                        <div class="day-name" id="day1-date">Monday</div>
+                        <div class="weather-icon-week" ><img src="" alt="" id="day1-img" height="70" width="70"></div>
+                        <div class="temperature-week" id="day1-temp">29 °C</div>
+                        <!-- <div class="feels-like-week" id="day1-feels">Feels 31</div> -->
+                        <div class="humidity-week"><span class="humidity-icon-week" ><img width="30" height="30"
+                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span><span id="day1-rain"> 45%</span>
                         </div>
                     </div>
                     <div class="forecast-day">
-                        <div class="day-name">Thursday</div>
-                        <div class="weather-icon-week">🌤️</div>
-                        <div class="temperature-week">29 °C</div>
-                        <div class="feels-like-week">Feels 31</div>
+                        <div class="day-name" id="day2-date">Thursday</div>
+                        <div class="weather-icon-week"><img src="" alt="" id="day2-img" height="70" width="70"></div>
+                        <div class="temperature-week" id="day2-temp">29 °C</div>
+                        <!-- <div class="feels-like-week">Feels 31</div> -->
                         <div class="humidity-week"><span class="humidity-icon-week"><img width="30" height="30"
-                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
+                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span><span id="day2-rain"> 45%</span>
                         </div>
                     </div>
                     <div class="forecast-day">
-                        <div class="day-name">Wednesday</div>
-                        <div class="weather-icon-week">🌤️</div>
-                        <div class="temperature-week">28 °C</div>
-                        <div class="feels-like-week">Feels 31</div>
+                        <div class="day-name" id="day3-date">Wednesday</div>
+                        <div class="weather-icon-week"><img src="" alt="" id="day3-img" height="70" width="70"></div>
+                        <div class="temperature-week" id="day3-temp">28 °C</div>
+                        <!-- <div class="feels-like-week">Feels 31</div> -->
                         <div class="humidity-week"><span class="humidity-icon-week"><img width="30" height="30"
-                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
+                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span><span id="day3-rain"> 45%</span>
                         </div>
                     </div>
                     <div class="forecast-day">
-                        <div class="day-name">Tuesday</div>
-                        <div class="weather-icon-week">🌤️</div>
-                        <div class="temperature-week">29 °C</div>
-                        <div class="feels-like-week">Feels 31</div>
+                        <div class="day-name" id="day4-date">Tuesday</div>
+                        <div class="weather-icon-week"><img src="" alt="" id="day4-img" height="70" width="70"></div>
+                        <div class="temperature-week"  id="day4-temp">29 °C</div>
+                        <!-- <div class="feels-like-week">Feels 31</div> -->
                         <div class="humidity-week"><span class="humidity-icon-week"><img width="30" height="30"
-                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
+                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span><span id="day4-rain"> 45%</span>
                         </div>
                     </div>
                     <div class="forecast-day">
-                        <div class="day-name">Firday</div>
-                        <div class="weather-icon-week">☀️</div>
-                        <div class="temperature-week">31 °C</div>
-                        <div class="feels-like-week">Feels 31</div>
+                        <div class="day-name" id="day5-date">Firday</div>
+                        <div class="weather-icon-week"><img src="" alt="" id="day5-img" height="70" width="70"></div>
+                        <div class="temperature-week" id="day5-temp">31 °C</div>
+                        <!-- <div class="feels-like-week">Feels 31</div> -->
                         <div class="humidity-week"><span class="humidity-icon-week"><img width="30" height="30"
-                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
+                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> <span id="day5-rain"> 45%</span>
                         </div>
                     </div>
                     <div class="forecast-day">
-                        <div class="day-name">Saturday</div>
-                        <div class="weather-icon-week">☀️</div>
-                        <div class="temperature-week">31 °C</div>
-                        <div class="feels-like-week">Feels 31</div>
+                        <div class="day-name" id="day6-date">Saturday</div>
+                        <div class="weather-icon-week"><img src="" alt="" id="day6-img" height="70" width="70"></div>
+                        <div class="temperature-week" id="day6-temp">31 °C</div>
+                        <!-- <div class="feels-like-week">Feels 31</div> -->
                         <div class="humidity-week"><span class="humidity-icon-week"><img width="30" height="30"
-                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
+                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span><span id="day6-rain"> 45%</span>
                         </div>
                     </div>
                     <div class="forecast-day">
-                        <div class="day-name">Sunday</div>
-                        <div class="weather-icon-week">☀️</div>
-                        <div class="temperature-week">31 °C</div>
-                        <div class="feels-like-week">Feels 31</div>
+                        <div class="day-name" id="day7-date">Sunday</div>
+                        <div class="weather-icon-week"><img src="" alt="" id="day7-img" height="70" width="70"></div>
+                        <div class="temperature-week" id="day7-temp">31 °C</div>
+                        <!-- <div class="feels-like-week">Feels 31</div> -->
                         <div class="humidity-week"><span class="humidity-icon-week"><img width="30" height="30"
-                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span> 45%
+                                    src="https://img.icons8.com/color/48/rain--v1.png" alt="rain--v1" /></span><span id="day7-rain"> 45%</span>
                         </div>
                     </div>
 
                 </div>
             </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97772.22049728228!2d79.8658290628741!3d6.728284827383767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24616c169e7c3%3A0xd21e80c970651d56!2sPanadura!5e0!3m2!1sen!2slk!4v1725783599004!5m2!1sen!2slk"
-                width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </form>
         <div class="form-news">
             <div class="news-container">

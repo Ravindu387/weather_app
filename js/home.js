@@ -79,8 +79,8 @@ function fetchCurrentWeather(data){
     document.getElementById(`now-weathericon`).src=current.condition.icon;
     document.getElementById('now-weathericon').alt = current.condition.text;
     document.getElementById(`lastUpdate`).innerHTML=`last updated `+current.last_updated
-//--------------------------------details----------------------------------
-    document.getElementById(`sun-set`).innerHTML=forecast.forecastday[0].date;
+//--------------------------------details--------------forecast.forecastday[0].date--------------------
+    document.getElementById(`localtime`).innerHTML=location.localtime;
     document.getElementById(`sunrise`).innerHTML=forecast.forecastday[0].astro.sunrise;
     document.getElementById(`sunset`).innerHTML=forecast.forecastday[0].astro.sunset;
     document.getElementById(`wind`).innerHTML=current.wind_kph+` km/h`;
@@ -307,9 +307,10 @@ function currentLocation(data){
     document.getElementById(`now-weathericon`).src=current.condition.icon;
     document.getElementById('now-weathericon').alt = current.condition.text;
     document.getElementById(`lastUpdate`).innerHTML=`last updated `+current.last_updated
-    document.getElementById(`sun-set`).innerHTML=forecast.forecastday[0].date;
+    document.getElementById(`localtime`).innerHTML=location.localtime;
+    console.log(location.localtime);
+    
   //--------------------------------details----------------------------------
-    document.getElementById(`sun-set`).innerHTML=forecast.forecastday[0].date;
     document.getElementById(`sunrise`).innerHTML=forecast.forecastday[0].astro.sunrise;
     document.getElementById(`sunset`).innerHTML=``+forecast.forecastday[0].astro.sunset;
     document.getElementById(`wind`).innerHTML=current.wind_kph+` km/h`;
